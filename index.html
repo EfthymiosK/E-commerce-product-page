@@ -12,12 +12,12 @@
     />
     <link rel="stylesheet" href="./output.css" />
   </head>
-  <body class="w-screen h-screen font-Kumbh">
+  <body class="w-full md:w-screen xl:w-screen h-screen font-Kumbh">
     <header
-      class="w-full md:w-[608px] xl:w-[1110px] h-[183px] flex justify-between items-center m-auto border-b-1 border-Dark-grayish-blue text-Dark-grayish-blue"
+      class="w-full md:w-[608px] xl:w-[1110px] h-[67px] md:h-[183px] xl:h-[183px] px-6 md:px-0 xl:px-0 flex justify-between items-center m-auto md:border-b-1 xl:border-b-1 md:border-Dark-grayish-blue xl:border-Dark-grayish-blue text-Very-dark-blue xl:text-Dark-grayish-blue font-bold xl:font-normal"
     >
       <div class="nav-first flex xl:items-center gap-4 xl:gap-14">
-        <div class="hamburger-container flex items-end xl:hidden">
+        <div class="hamburger-container flex items-end cursor-pointer xl:hidden">
           <svg class="" width="16" height="15" xmlns="http://www.w3.org/2000/svg"><path d="M16 12v3H0v-3h16Zm0-6v3H0V6h16Zm0-6v3H0V0h16Z" fill="#69707D" fill-rule="evenodd"/></svg>
         </div>
         <svg
@@ -32,44 +32,44 @@
             fill-rule="nonzero"
           />
         </svg>
-        <nav class="xl:block fixed top-0 xl:top-auto left-0 xl:left-auto xl:static h-screen xl:h-auto bg-White xl:bg-transparent w-[301px] xl:w-auto pl-[80px] pt-[117px] xl:pl-0 xl:pt-0 z-30 hidden">
-          <div class="close-icon xl:hidden">
+        <nav class="xl:block fixed top-0 xl:top-auto left-0 xl:left-auto xl:static h-screen xl:h-auto bg-White xl:bg-transparent w-[250px] md:w-[301px] xl:w-auto pl-6 pt-6 md:pl-[80px] md:pt-[117px] xl:pl-0 xl:pt-0 z-40 hidden">
+          <div class="close-icon xl:hidden cursor-pointer">
             <svg width="14" height="15" xmlns="http://www.w3.org/2000/svg"><path d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z" fill="#69707D" fill-rule="evenodd"/></svg>
           </div>
           <ul class="flex flex-col xl:flex-row gap-8 mt-14 xl:mt-0">
             <li class="relative group">
               <a class="" href="#">Collections</a
               ><span
-                class="h-1 w-full group-hover:bg-Orange absolute left-0 top-25"
+                class="h-1 w-full xl:group-hover:bg-Orange absolute left-0 top-25"
               ></span>
             </li>
             <li class="relative group">
               <a class="" href="#">Men</a
               ><span
-                class="h-1 w-full group-hover:bg-Orange absolute left-0 top-25"
+                class="h-1 w-full xl:group-hover:bg-Orange absolute left-0 top-25"
               ></span>
             </li>
             <li class="relative group">
               <a class="" href="#">Women</a
               ><span
-                class="h-1 w-full group-hover:bg-Orange absolute left-0 top-25"
+                class="h-1 w-full xl:group-hover:bg-Orange absolute left-0 top-25"
               ></span>
             </li>
             <li class="relative group">
               <a class="" href="#">About</a
               ><span
-                class="h-1 w-full group-hover:bg-Orange absolute left-0 top-25"
+                class="h-1 w-full xl:group-hover:bg-Orange absolute left-0 top-25"
               ></span>
             </li>
             <li class="relative group">
               <a class="" href="#">Contact</a
               ><span
-                class="h-1 w-full group-hover:bg-Orange absolute left-0 top-25"
+                class="h-1 w-full xl:group-hover:bg-Orange absolute left-0 top-25"
               ></span>
             </li>
           </ul>
         </nav>
-        <div class="backdrop z-20 w-screen h-screen bg-Black-lightbox top-0 left-0 fixed hidden"></div>
+        <div class="backdrop z-30 w-screen h-screen bg-Black-lightbox top-0 left-0 fixed hidden"></div>
       </div>
       <div class="nav-second flex items-center gap-12 ">
         <div class="cart relative">
@@ -88,12 +88,12 @@
               fill-rule="nonzero"
             />
           </svg>
-          <div class="cart-container w-90 min-h-64 rounded-lg absolute -left-[174px] top-[50px] z-20 bg-White shadow-2xl flex-col hidden">
+          <div class="cart-container w-90 min-h-64 rounded-lg absolute -right-[115px] md:-left-[174px] xl:-left-[174px] top-[50px] z-20 bg-White shadow-2xl flex-col hidden">
             <div class="cart-title border-b-2 border-Light-grayish-blue py-6 px-3">
               <p class="text-[1rem] text-Very-dark-blue font-bold">Cart</p>
             </div>
             <div class="cart-items w-full min-h-[182px] flex items-center justify-center px-6">
-              <p class="cart-empty ">Your cart is empty</p>
+              <p class="cart-empty font-normal text-Dark-grayish-blue">Your cart is empty</p>
               
               
             </div>
@@ -101,12 +101,12 @@
             
           </div>
         </div>
-        <img class="w-[50px] h-[50px]" src="./images/image-avatar.png" alt="" />
+        <img class="w-[50px] h-[50px] hover:ring-Orange hover:ring-2 rounded-full cursor-pointer" src="./images/image-avatar.png" alt="" />
       </div>
     </header>
-    <main class="xl:w-[1021px] md:w-[608px] flex flex-col xl:flex-row m-auto md:mt-12 xl:mt-[96px] md:gap-12 xl:gap-32">
+    <main class="w-full xl:w-[1021px] md:w-[608px] flex flex-col xl:flex-row m-auto md:mt-12 xl:mt-[96px] md:gap-12 xl:gap-32">
       <section
-        class="lightbox xl:hidden xl:w-screen xl:h-screen xl:bg-Black-lightbox backdrop-opacity-75 xl:fixed xl:top-0 xl:left-0 xl:place-content-center xl:z-30 md:block"
+        class="lightbox xl:hidden xl:w-screen xl:h-screen xl:bg-Black-lightbox backdrop-opacity-75 xl:fixed xl:top-0 xl:left-0 xl:place-content-center xl:z-50 md:block"
       >
         
         <div class="main-img relative">
@@ -125,22 +125,22 @@
                 </svg>
             </span>
           <img
-            class=" md:w-[608px] md:h-[290px] xl:size-[550px] rounded-2xl object-cover xl:object-fill"
+            class=" md:w-[608px] md:h-[290px] xl:size-[550px] md:rounded-2xl xl:rounded-2xl object-cover xl:object-fill"
             src="./images/image-product-1.jpg"
             alt=""
           />
           <img
-            class="hidden md:w-[608px] md:h-[290px] xl:size-[550px] rounded-2xl object-cover xl:object-fill"
+            class="hidden md:w-[608px] md:h-[290px] xl:size-[550px] md:rounded-2xl xl:rounded-2xl object-cover xl:object-fill"
             src="./images/image-product-2.jpg"
             alt=""
           />
           <img
-            class="hidden md:w-[608px] md:h-[290px] xl:size-[550px] rounded-2xl object-cover xl:object-fill"
+            class="hidden md:w-[608px] md:h-[290px] xl:size-[550px] md:rounded-2xl xl:rounded-2xl object-cover xl:object-fill"
             src="./images/image-product-3.jpg"
             alt=""
           />
           <img
-            class="hidden md:w-[608px] md:h-[290px] xl:size-[550px] rounded-2xl object-cover xl:object-fill"
+            class="hidden md:w-[608px] md:h-[290px] xl:size-[550px] md:rounded-2xl xl:rounded-2xl object-cover xl:object-fill"
             src="./images/image-product-4.jpg"
             alt=""
           />
@@ -165,7 +165,7 @@
             </div>
               <div class="thumbnails hidden xl:flex xl:justify-center gap-8 mt-8">
                 <button
-                  class="rounded-[14px] focus:border-4 focus:border-Orange active:border-4 active:border-Orange cursor-pointer"
+                  class="rounded-[14px] focus:ring-4 focus:ring-Orange active:ring-4 active:ring-Orange cursor-pointer"
                 >
                   <img
                     class="size-[88px] rounded-xl hover:opacity-50"
@@ -173,7 +173,7 @@
                     alt="image of a product"
                   /></button
                 ><button
-                  class="rounded-[14px] focus:border-4 focus:border-Orange active:border-4 active:border-Orange cursor-pointer"
+                  class="rounded-[14px] focus:ring-4 focus:ring-Orange active:ring-4 active:ring-Orange cursor-pointer"
                 >
                   <img
                     class="size-[88px] rounded-xl hover:opacity-50"
@@ -181,7 +181,7 @@
                     alt="image of a product"
                   /></button
                 ><button
-                  class="rounded-[14px] focus:border-4 focus:border-Orange active:border-4 active:border-Orange cursor-pointer"
+                  class="rounded-[14px] focus:ring-4 focus:ring-Orange active:ring-4 active:ring-Orange cursor-pointer"
                 >
                   <img
                     class="size-[88px] rounded-xl hover:opacity-50"
@@ -189,7 +189,7 @@
                     alt="image of a product"
                   /></button
                 ><button
-                  class="rounded-[14px] focus:border-4 focus:border-Orange active:border-4 active:border-Orange cursor-pointer"
+                  class="rounded-[14px] focus:ring-4 focus:ring-Orange active:ring-4 active:ring-Orange cursor-pointer"
                 >
                   <img
                     class="size-[88px] rounded-xl hover:opacity-50"
@@ -223,7 +223,7 @@
         />
         <div class="thumbnails flex justify-between mt-8">
           <button
-            class="rounded-[14px] focus:border-4 focus:border-Orange active:border-4 active:border-Orange cursor-pointer"
+            class="rounded-[14px] focus:ring-4 focus:ring-Orange active:ring-4 active:ring-Orange cursor-pointer"
           >
             <img
               class="size-[88px] rounded-xl hover:opacity-50"
@@ -231,7 +231,7 @@
               alt="image of a product"
             /></button
           ><button
-            class="rounded-[14px] focus:border-4 focus:border-Orange active:border-4 active:border-Orange cursor-pointer"
+            class="rounded-[14px] focus:ring-4 focus:ring-Orange active:ring-4 active:ring-Orange cursor-pointer"
           >
             <img
               class="size-[88px] rounded-xl hover:opacity-50"
@@ -239,7 +239,7 @@
               alt="image of a product"
             /></button
           ><button
-            class="rounded-[14px] focus:border-4 focus:border-Orange active:border-4 active:border-Orange cursor-pointer"
+            class="rounded-[14px] focus:ring-4 focus:ring-Orange active:ring-4 active:ring-Orange cursor-pointer"
           >
             <img
               class="size-[88px] rounded-xl hover:opacity-50"
@@ -247,7 +247,7 @@
               alt="image of a product"
             /></button
           ><button
-            class="rounded-[14px] focus:border-4 focus:border-Orange active:border-4 active:border-Orange cursor-pointer"
+            class="rounded-[14px] focus:ring-4 focus:ring-Orange active:ring-4 active:ring-Orange cursor-pointer"
           >
             <img
               class="size-[88px] rounded-xl hover:opacity-50"
@@ -257,18 +257,20 @@
           </button>
         </div>
       </section>
-      <section class="main-second md:w-[608px] xl:w-[445px] mb-[69px] xl:mb-0">
-        <h2 class="text-[13px] font-bold text-Dark-grayish-blue uppercase tracking-[2px] md:mt-0 xl:mt-[66px] mb-6">Sneaker Company</h2>
-        <h1 class="product-name text-[44px] font-bold text-Very-dark-blue mb-8">Fall Limited Edition Sneakers</h1>
-        <p class="text-[1rem] text-Dark-grayish-blue md:mb-6 xl:mb-8">These low-profile sneakers are your perfect casual wear companion. Featuring a 
+      <section class="main-second md:w-[608px] xl:w-[445px] mb-[69px] xl:mb-0 px-6 md:px-0 xl:px-0">
+        <h2 class="text-[13px] font-bold text-Dark-grayish-blue uppercase tracking-[2px] mt-6 md:mt-0 xl:mt-[66px] mb-4 md:mb-6 xl:mb-6">Sneaker Company</h2>
+        <h1 class="product-name text-[1.75rem] md:text-[44px] xl:text-[44px] font-bold text-Very-dark-blue mb-4 md:mb-8 xl:mb-8">Fall Limited Edition Sneakers</h1>
+        <p class="text-[1rem] text-Dark-grayish-blue mb-8 md:mb-6 xl:mb-8">These low-profile sneakers are your perfect casual wear companion. Featuring a 
           durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
-        <div class="price-container w-[173px] flex gap-x-4 gap-y-2 flex-wrap md:mb-6 xl:mb-8">
-          <p class="current-price text-[28px] font-bold text-Very-dark-blue leading-8">$125.00</p>
-          <div class="discount bg-Very-dark-blue text-White rounded-lg grid place-content-center font-bold px-2.5">50%</div>
+        <div class="price-container w-full md:w-[173px] xl:w-[173px] flex justify-between gap-x-4 gap-y-2 flex-nowrap md:flex-wrap xl:flex-wrap mb-8 md:mb-6 xl:mb-8">
+          <div class="flex gap-x-4">
+            <p class="current-price text-[28px] font-bold text-Very-dark-blue leading-8">$125.00</p>
+            <div class="discount bg-Very-dark-blue text-White rounded-lg grid place-content-center font-bold px-2.5">50%</div>
+          </div>
           <s class="text-[16px] text-Dark-grayish-blue font-bold">$250</s>
         </div>
-        <div class="buttons-container flex gap-2">
-          <div class="counter-container flex w-1/2 h-14 items-center justify-between bg-Light-grayish-blue rounded-lg">
+        <div class="buttons-container flex flex-col md:flex-row xl:flex-row gap-4 md:gap-2 xl:gap-2 xl:mb-[195px]">
+          <div class="counter-container flex w-full md:w-1/2 xl:w-1/2 h-14 items-center justify-between bg-Light-grayish-blue rounded-lg">
             <button class="minus px-7 cursor-pointer h-full">
               <svg class="" width="12" height="4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path d="M11.357 3.332A.641.641 0 0 0 12 2.69V.643A.641.641 0 0 0 11.357 0H.643A.641.641 0 0 0 0 .643v2.046c0 .357.287.643.643.643h10.714Z" id="a"/></defs><use fill="#FF7E1B" fill-rule="nonzero" xlink:href="#a"/></svg>
             </button>
@@ -278,7 +280,7 @@
               <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path d="M12 7.023V4.977a.641.641 0 0 0-.643-.643h-3.69V.643A.641.641 0 0 0 7.022 0H4.977a.641.641 0 0 0-.643.643v3.69H.643A.641.641 0 0 0 0 4.978v2.046c0 .356.287.643.643.643h3.69v3.691c0 .356.288.643.644.643h2.046a.641.641 0 0 0 .643-.643v-3.69h3.691A.641.641 0 0 0 12 7.022Z" id="b"/></defs><use fill="#FF7E1B" fill-rule="nonzero" xlink:href="#b"/></svg>
             </button>
           </div>
-          <button class="add-to-cart-btn cursor-pointer w-1/2 h-14 bg-Orange flex justify-center items-center gap-4 text-[1rem] font-bold rounded-lg shadow-[-3px_39px_98px_25px_rgba(255,125,26,0.25)]"><svg class="fill-black" width="22" height="20" xmlns="http://www.w3.org/2000/svg"><path d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z" fill="" fill-rule="nonzero"/></svg>Add to cart</button>
+          <button class="add-to-cart-btn cursor-pointer w-full md:w-1/2 xl:w-1/2 h-14 bg-Orange flex justify-center items-center gap-4 text-[1rem] font-bold rounded-lg shadow-[-3px_39px_98px_25px_rgba(255,125,26,0.25)]"><svg class="fill-black" width="22" height="20" xmlns="http://www.w3.org/2000/svg"><path d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z" fill="" fill-rule="nonzero"/></svg>Add to cart</button>
         </div>
       </section>
     </main>
