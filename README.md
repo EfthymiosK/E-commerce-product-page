@@ -25,8 +25,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: https://github.com/EfthymiosK/E-commerce-product-page.git
+- Live Site URL: https://efthymiosk.github.io/E-commerce-product-page/
 
 ## My process
 
