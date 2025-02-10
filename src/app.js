@@ -28,12 +28,12 @@ menuIcon.addEventListener("click", () => {
 
 closeIcon.addEventListener("click", () => {
   backdrop.classList.add("hidden");
-  navLinks.classList.add("hidden");
+  nav.classList.add("hidden");
 });
 
 backdrop.addEventListener("click", () => {
   backdrop.classList.add("hidden");
-  navLinks.classList.add("hidden");
+  nav.classList.add("hidden");
 });
 
 
@@ -123,7 +123,7 @@ const addItemToCart = (name, price, imageSrc) => {
   cartCount.innerHTML = `<span class="qty text-white text-[10px] font-bold">${totalCartQty}</span>`;
   const totalPrice = count * price;
   cartItems.replaceChildren();
-  const cartItem = document.createElement("div");
+  let cartItem = document.createElement("div");
   cartItem.className = "cart-item flex justify-between items-center w-full";
   cartItem.dataset.quantity = count;
   cartItem.innerHTML = `<img class="size-[50px] rounded-sm" src="${imageSrc}" alt="${name}">
@@ -141,11 +141,16 @@ const addItemToCart = (name, price, imageSrc) => {
 
   const deleteButton = cartItem.querySelector(".delete-item");
   deleteButton.addEventListener("click", (event) => {
-    const cartItem = event.target.closest(".cart-item");
-    removeItemFromCart(cartItem);
+    const cartItem1 = event.target.closest(".cart-item");
+    removeItemFromCart(cartItem1);
     cartContainer.classList.toggle("hidden");
   cartContainer.classList.toggle("flex");
     checkout.classList.add("hidden");
+    cartCount.classList.add("hidden");
+    //cartItem = document.createElement("div");
+  cartItem.className = "cart-item flex justify-between items-center ";
+  cartItem.innerHTML = `<p class="cart-empty font-normal text-Dark-grayish-blue">Your cart is empty</p>`;
+  cartItems.appendChild(cartItem);
   });
 };
 
@@ -162,6 +167,7 @@ addToCartBtn.addEventListener("click", () => {
   
   if (count === 0) return;
   cartCount.classList.remove("hidden");
+  cartCount.classList.add("grid");
   checkout.classList.remove("hidden");
   const productName = document.querySelector(".product-name").textContent;
   const productPriceEl = document.querySelector(".current-price");
